@@ -12,7 +12,10 @@ export type DeleteUserDTO = {
 };
 
 export const deleteUser = ({ userId }: DeleteUserDTO) => {
+<<<<<<< HEAD
   console.log(userId)
+=======
+>>>>>>> origin
   return api.delete(`/users/${userId}`);
 };
 

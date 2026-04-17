@@ -35,7 +35,11 @@ export const AppProvider = ({ children }: AppProviderProps) => {
       {/* <ErrorBoundary FallbackComponent={MainErrorFallback}> */}
       {/* <HelmetProvider> */}
       <QueryClientProvider client={queryClient}>
+<<<<<<< HEAD
         {/* {import.meta.env.DEV && <ReactQueryDevtools />} */}
+=======
+        {import.meta.env.DEV && <ReactQueryDevtools />}
+>>>>>>> origin
         {/* <Notifications /> */}
         {/* <AuthLoader
           renderLoading={() => (

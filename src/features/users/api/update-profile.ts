@@ -9,8 +9,14 @@ import { useUser } from '../../../lib/auth';
 import { MutationConfig } from '../../../lib/react-query';
 
 export const updateProfileInputSchema = z.object({
+<<<<<<< HEAD
   name: z.string().min(1, 'Required'),
   email: z.string().min(1, 'Required').email('Invalid email'),
+=======
+  email: z.string().min(1, 'Required').email('Invalid email'),
+  firstName: z.string().min(1, 'Required'),
+  lastName: z.string().min(1, 'Required'),
+>>>>>>> origin
   bio: z.string(),
 });
 

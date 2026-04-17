@@ -192,7 +192,10 @@ const Form = <
   schema,
 }: FormProps<TFormValues, Schema>) => {
   const form = useForm({ ...options, resolver: zodResolver(schema) });
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin
   return (
     <FormProvider {...form}>
       <form

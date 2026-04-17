@@ -46,9 +46,12 @@ export const paths = {
       path: 'profile',
       getHref: () => '/app/profile',
     },
+<<<<<<< HEAD
      project: {
       path: 'projects',
       getHref: () => '/app/projects',
     },
+=======
+>>>>>>> origin
   },
 } as const;

@@ -12,7 +12,7 @@ export const createUserSchema = z.object({
   project_ids: z.array(z.number()).min(1, "Add at least one project"),
   is_active: z.number().default(1),
   admin_id: z.string().optional().default(""),
-  // supervisor_id: z.string().optional().default(""),
+  supervisor_id: z.string().optional().default(""),
 });
 
 export type CreateUserInput = z.infer<typeof createUserSchema>;
@@ -54,5 +54,17 @@ export const useSupervisors = () => {
   return useQuery({
     queryKey: ['supervisors'],
     queryFn: getSupervisors,
+  });
+};
+
+
+export const getProjects = () => {
+  return api.get('/api/projects');
+};
+
+export const useProjects = () => {
+  return useQuery({
+    queryKey: ['projects'],
+    queryFn: getProjects,
   });
 };

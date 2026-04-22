@@ -25,11 +25,7 @@ api.interceptors.request.use(authRequestInterceptor);
 
 api.interceptors.response.use(
   (response) => {
-<<<<<<< HEAD
-    // console.log(response) 
-=======
-    console.log(response) 
->>>>>>> origin
+
     return response.data
   },
   
